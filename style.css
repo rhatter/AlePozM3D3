@@ -1,0 +1,118 @@
+nav {
+  font-size: 1.4em;
+}
+
+.leftBar {
+  height: calc(100vh - 57px);
+  min-width: 90px;
+  transition: all 0.4s ease;
+}
+
+.burgerBtn {
+  position: fixed;
+  bottom: -300px;
+  left: 24px;
+  transition: all 0.5s ease;
+  z-index: 11;
+}
+
+.mainArea {
+  justify-content: flex-end;
+}
+
+#cardDestination {
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 990px) {
+  #cardDestination {
+    justify-content: center !important;
+  }
+
+  .mainArea {
+    justify-content: center !important;
+  }
+
+  .leftBar {
+    margin-left: -90px;
+  }
+  .intro {
+    margin-left: 0px;
+  }
+
+  #sidOpenClose {
+    bottom: 15px;
+  }
+}
+
+.imgProfileCard {
+  border-radius: 100%;
+  object-fit: cover;
+  height: 2.2rem;
+  aspect-ratio: 1;
+}
+.carousel-item {
+  aspect-ratio: 1;
+}
+[data-bs-theme="dark"] .carousel .carousel-control-next-icon,
+[data-bs-theme="dark"] .carousel .carousel-control-prev-icon,
+[data-bs-theme="dark"].carousel .carousel-control-next-icon,
+[data-bs-theme="dark"].carousel .carousel-control-prev-icon {
+  filter: invert(0) drop-shadow(0px 0px 2px black);
+}
+
+[data-bs-theme="dark"] .carousel .carousel-indicators [data-bs-target],
+[data-bs-theme="dark"].carousel .carousel-indicators [data-bs-target] {
+  background-color: #fff;
+}
+
+.unSelected {
+  font-weight: var(--fa-style, 100);
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.articleDescription {
+  font-weight: normal;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  overflow: hidden;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+#sidenav-1 {
+  z-index: 10;
+}
+
+.carousel-item > img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-title {
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: normal;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.topBar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+#cardDestination {
+  margin-top: 80px;
+}
+
+#cardDestination > .row > div {
+  transition: all 0.4s ease;
+}
